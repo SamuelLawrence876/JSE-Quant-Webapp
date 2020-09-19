@@ -1,0 +1,7 @@
+matplotlib==3.2
+pandas
+DateTime
+requests
+streamlit==0.67
+#ffn
+-e git+https://github.com/pmorissette/ffn.git#egg=ffn
