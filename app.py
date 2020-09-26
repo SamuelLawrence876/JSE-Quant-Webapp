@@ -204,6 +204,7 @@ def app():
                             "-clustering-algorithm-ftca/")
 
                     # if Analyzer_choice == "Change Analysis":
+                            # Counting the amout of changes in dataframe
                     #     def Change(Data):
                     #         if x > -0.5 and x <= 0.5:
                     #             return 'Slight or No change'
@@ -226,9 +227,13 @@ def app():
                     #
                     #     test = data
                     #     for stock in test.columns:
-                    #         test[stock] = test[stock].apply(Change)
+                    # #         test[stock] = test[stock].apply(Change)
                     #
-                    #     st.write(test)
+                    #     for Categorical_Values in test.columns:
+                    #         cat_num = test[Categorical_Values].value_counts().plot(kind='pie', figsize=(10, 5))
+                    #         st.write(cat_num)
+
+                        #st.write(test)
 
 
 
@@ -248,10 +253,11 @@ def app():
 
             except ValueError:
                 pass
+    st.write("Github repo: https://github.com/SamuelLawrence876/JSE-Quant-Webapp")
 
     if choice == 'Portfolio Assessment':
         st.title('Under Construction!')
-
+    
 
 if __name__ == "__main__":
     app()
