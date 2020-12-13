@@ -4,7 +4,7 @@ from urllib.error import HTTPError
 import streamlit as st
 from time import sleep
 import ffn
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 # Idea tab:
 # LSTM preditction
 # RNN Prediction
@@ -251,7 +251,7 @@ def app():
                     break
                 # st.error('Try again later')
 
-            except ValueError:
+            except (ValueError, UnboundLocalError):
                 pass
     st.write("Github repo: https://github.com/SamuelLawrence876/JSE-Quant-Webapp")
 
