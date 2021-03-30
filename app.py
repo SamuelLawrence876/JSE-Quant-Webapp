@@ -5,7 +5,10 @@ import streamlit as st
 from time import sleep
 import ffn
 st.set_option('deprecation.showPyplotGlobalUse', False)
-
+st.set_page_config(layout="wide", page_icon=":art:", page_title="Custom Theming")
+blank, title_col, blank = st.beta_columns([2,3.5,2])
+st.get_option("theme.primaryColor")
+txt_clr = st.get_option("theme.textColor")
 # Idea tab:
 # LSTM preditction
 # RNN Prediction
